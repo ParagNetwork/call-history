@@ -1,0 +1,272 @@
+/* Main container styling */
+body{
+  /* background-color: #ebedef !important; */
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('./image/bg.jpeg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.img-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+
+.history-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px; /* Adjust based on your design */
+  background-color: #000; /* Dark theme */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* For light text */
+.history-card h2,
+.history-card p,
+.history-card small {
+  color: #fff;
+  margin: 0;
+}
+.img-grid img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 rgba(8, 134, 200, .2);
+  border-radius: 14px;
+  border: 2px solid #fff;
+  
+}
+.form-container h2 {
+  color: #fff; /* Darker color for the heading */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CSS for form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff; /* Medium dark color for labels */
+}
+.react-tel-input .flag-dropdown{
+  background: unset !important;
+  border: none !important;
+}
+.react-tel-input input{
+  padding-left: 50px !important;
+}
+.form-group input,
+.form-group .react-tel-input .form-control {
+  width: 100%;
+  padding: 10px;
+  height: 45px !important;
+  border-radius: 10px;
+  border: none;
+  background: #f1f1f1 !important;
+  box-sizing: border-box;
+}
+
+/* Focus state for inputs */
+.form-group input:focus,
+.form-group .react-tel-input .form-control:focus {
+  border-color: #FC6A57; /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error message styling */
+.error {
+  color: #ff4d4f; /* Red color for error messages */
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #FC6A57; /* Blue background for button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.one,.two,.three,.four{
+  background: url('./image/bg.jpg') no-repeat;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  color: #fff !important;
+}
+
+button[type="submit"]:hover {
+  background-color: #d64835 ;
+}
+
+
+/* // dashboard.css */
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 rgba(8, 134, 200, .2);
+  border-radius: 14px;
+  border: 2px solid #fff;
+  background: #fff;
+  
+}
+.img-container{
+
+  max-width: 800px;
+  margin: 20px auto;
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+ 
+}
+.card-content{
+  border: 2px solid #f1f1f1;
+  border-radius: 24px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-icon{
+  height: 50px;
+  width: 50px;
+  background: #FC6A57;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background: #f4f4f4; /* Light grey background for the container */
+  border-radius: 8px;
+}
+
+/* Header card styles */
+.header-card {
+  background: #ffffff; /* White background for clarity */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.header-card h2 {
+  color: #333; /* Dark grey for text for better readability */
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.header-card p {
+  color: #666; /* Lighter text for less emphasis */
+  font-size: 12px;
+}
+
+.header-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header-card li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  margin-top: 10px;
+  color: #333; /* Matching the header text color */
+  font-size: 12px;
+}
+
+/* Package card general styles */
+.package-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  /* background: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+}
+
+.package-card .package-content h3 {
+  margin: 0;
+}
+
+.package-card .package-content p {
+  font-size: 14px;
+}
+
+
+
+.package-card .package-icon {
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* background: #f1f1f1; */
+  color: #333; /* Dark grey to match the text */
+}
+
+/* Ensure links look consistent */
+a.upi-pay1 {
+  color: inherit; /* Inherits text color from parent elements */
+  text-decoration: none; /* Removes underline from links */
+}
+a{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.bronze1{
+  background: url('./image//back.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+@media (max-width:768px){
+  .img-grid{
+    grid-template-columns: repeat(1,1fr);
+    padding: 20px;
+  }
+  .img-container{
+    margin: 20px auto;
+  }
+}
