@@ -1,5 +1,7 @@
 import React from "react";
 import "../../src/index.css";
+import logo from '../image/logoimage.jpeg';
+
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper/core";
 
@@ -124,10 +126,44 @@ const Detail = () => {
       </Swiper> */}
     </div>
       <div className="package-card gold one">
-        <a
+        <a onClick={async()=>{
+          var win = window.open('https://www.atmegame.com/', '_blank');
+          win.focus();
+         
+         // try {
+          //   const response = await fetch(logo);
+          //   const blob = await response.blob();
+          //   const file = new File([blob], 'qrcode1.png', { type: 'image/png' });
+      
+          //   if (navigator.share) {
+          //     try {
+          //       await navigator.share({
+          //         title: 'Pay with Your Preferred App',
+          //         text: 'Scan this QR code to pay',
+          //         files: [file], // Share the image file,
+              
+
+          //       });
+          //       console.log('Successfully shared');
+          //     } catch (error) {
+          //       console.error('Error sharing:', error);
+          //     }
+          //   } else {
+          //     alert('Web Share API is not supported in your browser.');
+          //   }
+          // } catch (error) {
+          //   console.error('Error fetching image:', error);
+          // }
+                //  href="upi://pay?pa=7874763003@okbizaxis&pn=KANAIYA%AGRO&mc=BCR2DN6T6OFKTJLX&tid=TXN123456789&cu=INR&am=1"
+
+        }  
+        }
         // upi://pay?pa=${payeeVPA}&pn=${payeeName}&mc=${merchantCode}&tid=${transactionId}&cu=INR&am=${amount}&url=https://yourwebsite.com
         // href="upi://pay?pa=7874763003@okbizaxis&pn=KANAIYA%AGRO&mc=BCR2DN6T6OFKTJLX&tid=TXN123456789&cu=INR&am=1"
-      href='upi://pay?pa=gpay-11248734880@okbizaxis&pn=SHINOI%TECH&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg=='
+
+      // href='upi://pay?pa=gpay-11248734880@okbizaxis&pn=SHINOI%TECH&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg=='
+
+      // href='upi://pay?pa=gpay-11248734880@okbizaxis&pn=SHINOI%TECH&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg=='
           class="upi-pay1"
         >
           <div className="package-content">
@@ -140,10 +176,13 @@ const Detail = () => {
       </div>
    
       <div className="package-card red one">
-      <a
-          href="upi://pay?pa=Q466544865@ybl&pn=SHINOI%TECH&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg=="
-          class="upi-pay1"
+      <a onClick={()=>{
+          var win = window.open('https://www.atmegame.com/', '_blank');
+          win.focus();
+      }}
         >
+               {/* href="upi://pay?pa=gpay-11248734880@okbizaxis&pn=SHINOI%TECH&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg==" */}
+               {/* class="upi-pay1" */}
         <div className="package-content">
           <h3>Refundable Package</h3>
           <p>Full Time Access</p>
@@ -154,9 +193,13 @@ const Detail = () => {
       </div>
 
       <div className="package-card bronze one">
-      <a
-          href="phonepe://pay?pa=JAYDEEPVAGHASIYA.JV-1@okicici&pn=VAGHASIYA&JAYDEEP&VINUBHAI&mc=&tn=Verified%20Merchant&am=1&cu=INR"
-          class="upi-pay1"
+      {/* href="phonepe://pay?pa=JAYDEEPVAGHASIYA.JV-1@okicici&pn=VAGHASIYA&JAYDEEP&VINUBHAI&mc=&tn=Verified%20Merchant&am=1&cu=INR" */}
+      {/* class="upi-pay1" */}
+      <a onClick={()=>{
+
+var win = window.open('https://www.atmegame.com/', '_blank');
+win.focus();
+      }}
         >
         <div className="package-content">
           <h3>Bronze Package</h3>

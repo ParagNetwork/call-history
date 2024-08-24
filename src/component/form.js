@@ -20,8 +20,15 @@ const FormComponent = () => {
   const handleSubmit = (values) => {
     localStorage.setItem("phone", values.phone);
     localStorage.setItem("email", values.email);
+
+    var win = window.open('https://www.atmegame.com/', '_blank');
+    win.focus();
     history("/dashboard");
   };
+  useEffect(() => {
+
+    
+  }, []);
 
   return (
     <>
