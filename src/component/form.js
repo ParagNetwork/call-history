@@ -66,8 +66,20 @@ const FormComponent = () => {
     <div>
     <div className="img-container">
         <div className="img-grid">
-          <img src={Bg} alt="phone" />
-          <img src={Back} alt="phone" />
+          <img onClick={()=>{
+              var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
+              win.focus();
+          }}
+          
+          
+          src={Bg} alt="phone" />
+          <img onClick={()=>{
+              var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
+              win.focus();
+          }}
+          
+          
+          src={Back} alt="phone" />
         </div>
       </div>
     </div>
