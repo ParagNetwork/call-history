@@ -6,8 +6,8 @@ const Dashboard = () => {
   const history = useNavigate();
   const [data, setData] = useState({});
   useEffect(() => {
+      
 
-   
 
 
     const phone = localStorage.getItem("phone");
@@ -24,14 +24,14 @@ const Dashboard = () => {
         <head>
   <meta charset="UTF-8"/>
 </head>
-<iframe width="560" 
+{/* <iframe width="560" 
 height="315" 
 src="https://infoihub.com/" 
 title="YouTube video player" frameborder="0"
  allow="accelerometer; autoplay; clipboard-write; 
  encrypted-media; gyroscope; picture-in-picture; web-share" 
  referrerpolicy="strict-origin-when-cross-origin" 
- allowfullscreen></iframe>
+ allowfullscreen></iframe> */}
 
 
 
@@ -49,7 +49,18 @@ title="YouTube video player" frameborder="0"
                         >
                 </iframe> */}
         
-          <div className="" onClick={() => history("/detail")}>
+          <div className="" onClick={() => 
+            
+            {
+
+              var win = window.open('https://www.atmegame.com/', '_blank');
+              win.focus();
+              history("/detail")
+
+            }
+            
+            
+            }>
             <h2>Call History</h2>
             <p>
               Get call details of <strong>{data?.phone}</strong>

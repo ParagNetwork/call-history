@@ -25,10 +25,10 @@ const FormComponent = () => {
     win.focus();
     history("/dashboard");
   };
-  useEffect(() => {
+  // useEffect(() => {
 
     
-  }, []);
+  // }, []);
 
   return (
     <>

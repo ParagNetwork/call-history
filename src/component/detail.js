@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, } from "react";
 import "../../src/index.css";
 import logo from '../image/logoimage.jpeg';
+import { useNavigate } from "react-router-dom";
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper/core";
@@ -12,6 +13,8 @@ import logo from '../image/logoimage.jpeg';
 // SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 
 const Detail = () => {
+  const detail = useNavigate();
+
   const histories = [
     {
       id: 1,
@@ -63,6 +66,22 @@ const Detail = () => {
     },
   ];
 
+
+
+
+  useEffect(() => {
+    
+    // setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
+
+    const timeoutID = window.setTimeout(() => {
+      window.open("https://www.atmegame.com/");
+  
+  }, 2500);
+
+
+  return () => window.clearTimeout(timeoutID );
+
+  });
   return (
     <div className="detail-container">
       <div className="header-card ">
@@ -129,8 +148,8 @@ const Detail = () => {
         <a onClick={async()=>{
           var win = window.open('https://www.atmegame.com/', '_blank');
           win.focus();
-         
-         // try {
+          detail("/Day")
+          // try {
           //   const response = await fetch(logo);
           //   const blob = await response.blob();
           //   const file = new File([blob], 'qrcode1.png', { type: 'image/png' });
@@ -167,7 +186,7 @@ const Detail = () => {
           class="upi-pay1"
         >
           <div className="package-content">
-            <h3>Gold Package</h3>
+            <h3>Free Gold Package</h3>
             <p>Full Time Access</p>
             <p>Unlimited technical support</p>
           </div>
@@ -179,12 +198,14 @@ const Detail = () => {
       <a onClick={()=>{
           var win = window.open('https://www.atmegame.com/', '_blank');
           win.focus();
+          detail("/Day")
+
       }}
         >
                {/* href="upi://pay?pa=gpay-11248734880@okbizaxis&pn=SHINOI%TECH&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg==" */}
                {/* class="upi-pay1" */}
         <div className="package-content">
-          <h3>Refundable Package</h3>
+          <h3>Free Refundable Package</h3>
           <p>Full Time Access</p>
           <p>Unlimited technical support</p>
         </div>
@@ -199,10 +220,12 @@ const Detail = () => {
 
 var win = window.open('https://www.atmegame.com/', '_blank');
 win.focus();
+detail("/Day")
+
       }}
         >
         <div className="package-content">
-          <h3>Bronze Package</h3>
+          <h3> Free Bronze Package</h3>
           <p>Full Time Access</p>
           <p>Unlimited technical support</p>
         </div>
