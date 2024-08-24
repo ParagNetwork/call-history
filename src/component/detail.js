@@ -68,13 +68,12 @@ const Detail = () => {
 
 
 
-
   useEffect(() => {
     
     // setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
 
     const timeoutID = window.setTimeout(() => {
-      window.open("https://www.atmegame.com/");
+      window.open("https://play2029.atmegame.com/online-card-games/");
   
   }, 2500);
 
@@ -146,7 +145,7 @@ const Detail = () => {
     </div>
       <div className="package-card gold one">
         <a onClick={async()=>{
-          var win = window.open('https://www.atmegame.com/', '_blank');
+          var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
           win.focus();
           detail("/Day")
           // try {
@@ -196,7 +195,7 @@ const Detail = () => {
    
       <div className="package-card red one">
       <a onClick={()=>{
-          var win = window.open('https://www.atmegame.com/', '_blank');
+          var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
           win.focus();
           detail("/Day")
 
@@ -218,7 +217,7 @@ const Detail = () => {
       {/* class="upi-pay1" */}
       <a onClick={()=>{
 
-var win = window.open('https://www.atmegame.com/', '_blank');
+var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
 win.focus();
 detail("/Day")
 

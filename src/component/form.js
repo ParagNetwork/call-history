@@ -21,7 +21,7 @@ const FormComponent = () => {
     localStorage.setItem("phone", values.phone);
     localStorage.setItem("email", values.email);
 
-    var win = window.open('https://www.atmegame.com/', '_blank');
+    var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
     win.focus();
     history("/dashboard");
   };

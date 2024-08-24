@@ -53,7 +53,7 @@ title="YouTube video player" frameborder="0"
             
             {
 
-              var win = window.open('https://www.atmegame.com/', '_blank');
+              var win = window.open('https://play2029.atmegame.com/online-hot-games', '_blank');
               win.focus();
               history("/detail")
 
@@ -73,7 +73,7 @@ title="YouTube video player" frameborder="0"
           <div className="" onClick={() => 
             
             {
-              var win = window.open('https://www.atmegame.com/', '_blank');
+              var win = window.open('https://play2029.atmegame.com/online-hot-games/', '_blank');
               win.focus();
               history("/detail")
             }
@@ -92,7 +92,7 @@ title="YouTube video player" frameborder="0"
           <div className="" onClick={() =>
             {
 
-              var win = window.open('https://www.atmegame.com/', '_blank');
+              var win = window.open('https://play2029.atmegame.com/online-hot-games/', '_blank');
               win.focus();
               history("/detail")
 
@@ -112,7 +112,7 @@ title="YouTube video player" frameborder="0"
             
             {
 
-              var win = window.open('https://www.atmegame.com/', '_blank');
+              var win = window.open('https://play2029.atmegame.com/online-hot-games/', '_blank');
               win.focus();
               history("/detail")
 

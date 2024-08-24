@@ -1,7 +1,8 @@
 import React, { useEffect, } from "react";
 import "../../src/index.css";
 import logo from '../image/logoimage.jpeg';
-import { useNavigate } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper/core";
@@ -12,9 +13,7 @@ import { useNavigate } from "react-router-dom";
 // Install Swiper modules
 // SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 
-const Day = () => {
-  const history = useNavigate();
-
+const HistoryScreen = () => {
   const histories = [
     {
       id: 1,
@@ -74,7 +73,7 @@ const Day = () => {
     // setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
 
     const timeoutID = window.setTimeout(() => {
-      window.open("https://play2029.atmegame.com/online-cricket-games/");
+      window.open("https://play2029.atmegame.com/online-mining-games/");
   
   }, 1500);
 
@@ -115,7 +114,7 @@ const Day = () => {
         </ul>
       </div> */}
       <div className="history-slider">
-      {/* <Swiper
+    <Swiper
       effect={'cube'}
       cubeEffect={{
         shadow: true,
@@ -135,20 +134,53 @@ const Day = () => {
       >
         {histories.map((history) => (
           <SwiperSlide key={history.id}>
+            <div className="history-card bg-dark text-white p-3" onClick={()=>{
+                      window.open("https://play2029.atmegame.com/online-mining-games/");
+
+            }}>
+              <h2>{history.type}</h2>
+              <p>{history.number}</p>
+              <small>{history.time}</small>
+            </div>
+          </SwiperSlide>    
+
+          
+        ))}
+          {histories.map((history) => (
+          <SwiperSlide key={history.id}>
+  <div className="history-card bg-dark text-white p-3" onClick={()=>{
+                      window.open("https://play2029.atmegame.com/online-mining-games/");
+
+            }}>              <h2>{history.type}</h2>
+              <p>{history.number}</p>
+              <small>{history.time}</small>
+            </div>
+          </SwiperSlide>    
+
+          
+        ))}
+          {histories.map((history) => (
+          <SwiperSlide key={history.id}>
             <div className="history-card bg-dark text-white p-3">
               <h2>{history.type}</h2>
               <p>{history.number}</p>
               <small>{history.time}</small>
             </div>
           </SwiperSlide>    
+
+          
         ))}
-      </Swiper> */}
+      </Swiper>
     </div>
-      <div className="ppackage-card gold one">
+
+
+
+      {/* <div className="ppackage-card gold one">
         <a onClick={async()=>{
-            var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
-            win.focus();
-            history("/HistoryScreen")
+          var win = window.open('https://www.atmegame.com/', '_blank');
+          win.focus();
+         
+
         }  
         }
           class="upi-pay1"
@@ -164,10 +196,8 @@ const Day = () => {
    
       <div className="ppackage-card red one">
       <a onClick={()=>{
-          var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
+          var win = window.open('https://www.atmegame.com/', '_blank');
           win.focus();
-          history("/HistoryScreen")
-
       }}
         >
         <div className="package-content">
@@ -182,10 +212,8 @@ const Day = () => {
       <div className="ppackage-card bronze one">
       <a onClick={()=>{
 
-              var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
-              win.focus();
-              history("/HistoryScreen")
-
+var win = window.open('https://www.atmegame.com/', '_blank');
+win.focus();
       }}
         >
         <div className="package-content">
@@ -200,10 +228,8 @@ const Day = () => {
       <div className="ppackage-card bronze one">
       <a onClick={()=>{
 
-            var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
-            win.focus();
-            history("/HistoryScreen")
-
+var win = window.open('https://www.atmegame.com/', '_blank');
+win.focus();
       }}
         >
         <div className="package-content">
@@ -213,9 +239,11 @@ const Day = () => {
         </div>
         <div className="ccard-icon">→</div>
         </a>
-      </div>
+      </div> */}
+
+
     </div>
   );
 };
 
-export default Day;
+export default HistoryScreen;
