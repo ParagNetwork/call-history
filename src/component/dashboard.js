@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../../src/index.css";
 import { useNavigate } from "react-router-dom";
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: 'AW-16645947755'
+}
+TagManager.initialize(tagManagerArgs)
 
 const Dashboard = () => {
   const history = useNavigate();
@@ -21,9 +27,23 @@ const Dashboard = () => {
       <div className="card">
         <div className="card-content one">
         {/* <MyComponent openLinks={openLinks} /> */}
+        <html>
         <head>
-  <meta charset="UTF-8"/>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16645947755">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16645947755');
+</script> */}
+
 </head>
+
+
+        </html>
+      
 {/* <iframe width="560" 
 height="315" 
 src="https://infoihub.com/" 
