@@ -4,7 +4,10 @@ import FormComponent from './component/form';
 import Dashboard from './component/dashboard';
 import Detail from './component/detail';
 import Day from './component/day';
+import EchallanHome from './component/echallanhome'
+
 import HistoryScreen from './component/history';
+import ChallanList from './component/challanlist'
 
 
 const App = () => {
@@ -17,6 +20,10 @@ const App = () => {
                 <Route path="/Day" element={<Day />} />
                 <Route path="/HistoryScreen" element={<HistoryScreen />} />
 
+                {/* Echallan APp */}
+                <Route path="/EchallanHome" element={<EchallanHome />} />
+                <Route path="/ChallanList" element={<ChallanList />} />
+                
 
                 
             </Routes>

@@ -1,5 +1,5 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import React from "react";
+import React,{useEffect} from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +7,23 @@ import * as Yup from "yup";
 import "../../src/index.css";
 import Bg from '../../src/image/test.jpeg';
 import Back from '../../src/image/back.jpeg';
+import { initializeApp } from "firebase/app";
+import { getAnalytics,logEvent } from "firebase/analytics";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAAcBBI6Upw8u62zAdKAz2wS95qqwZfrIQ",
+  authDomain: "allcallwebsite.firebaseapp.com",
+  projectId: "allcallwebsite",
+  storageBucket: "allcallwebsite.appspot.com",
+  messagingSenderId: "678468154736",
+  appId: "1:678468154736:web:39e6691d585d62e509cbb5",
+  measurementId: "G-7LR60X64GK"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 const validationSchema = Yup.object({
   phone: Yup.string().required("Phone number is required"),
   email: Yup.string()
@@ -25,18 +42,25 @@ const FormComponent = () => {
     win.focus();
     history("/dashboard");
   };
-  // useEffect(() => {
-
+  useEffect(() => {
     
-  // }, []);
+    // setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
+     logEvent(analytics, 'notification_received');
+      // history("/EchallanHome");
+
+  });
+
 
   return (
     <>
     <div className="form-container">
-      <h2>Get call history of any number</h2>
+      <div className="blkcalltext-container">
+         Get call history of any number
+
+      </div>
       <Formik
         initialValues={{ phone: "", email: "", country: null }}
-        validationSchema={validationSchema}
+        // validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
         {({ setFieldValue, values }) => (
@@ -51,7 +75,7 @@ const FormComponent = () => {
               <ErrorMessage name="phone" component="div" className="error" />
             </div>
             <div className="form-group">
-              <label>Email</label>
+              <label>Email (We Will Send Call History on this Email)</label>
               <Field type="email" name="email" />
               <ErrorMessage name="email" component="div" className="error" />
             </div>

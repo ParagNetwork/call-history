@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import TagManager from "react-gtm-module";
 
 const tagManagerArgs = {
-  gtmId: 'AW-16645947755'
+  gtmId: 'AW-16645947755',
 }
 TagManager.initialize(tagManagerArgs)
 
@@ -12,10 +12,7 @@ const Dashboard = () => {
   const history = useNavigate();
   const [data, setData] = useState({});
   useEffect(() => {
-      
-
-
-
+    
     const phone = localStorage.getItem("phone");
     const email = localStorage.getItem("email");
     setData({ phone, email });
