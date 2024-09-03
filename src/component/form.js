@@ -54,10 +54,10 @@ const FormComponent = () => {
   return (
     <>
     <div className="form-container">
-      <div className="blkcalltext-container">
-         Get call history of any number
+      {/* <div className="blkcalltext-container"> */}
+       <h2> Get call history of any number</h2> 
 
-      </div>
+      {/* </div> */}
       <Formik
         initialValues={{ phone: "", email: "", country: null }}
         // validationSchema={validationSchema}
