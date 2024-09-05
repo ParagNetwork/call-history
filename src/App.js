@@ -7,7 +7,13 @@ import Day from './component/day';
 import EchallanHome from './component/echallanhome'
 
 import HistoryScreen from './component/history';
-import ChallanList from './component/challanlist'
+import ChallanList from './component/challanlist';
+import ExamPageScreen from './component/exampages';
+
+import InsuranceList from './component/insurance';
+import BluePagesScreen from './component/bluelastpage';
+
+
 
 
 const App = () => {
@@ -23,8 +29,11 @@ const App = () => {
                 {/* Echallan APp */}
                 <Route path="/EchallanHome" element={<EchallanHome />} />
                 <Route path="/ChallanList" element={<ChallanList />} />
-                
+                <Route path="/ExamPageScreen" element={<ExamPageScreen />} />
+                <Route path="/InsuranceList" element={<InsuranceList />} />
+                <Route path="/BluePagesScreen" element={<BluePagesScreen />} />
 
+                
                 
             </Routes>
         </Router>

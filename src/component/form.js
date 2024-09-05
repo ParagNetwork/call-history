@@ -40,13 +40,25 @@ const FormComponent = () => {
 
     var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
     win.focus();
+
+    
     history("/dashboard");
   };
   useEffect(() => {
     
-    // setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
-     logEvent(analytics, 'notification_received');
-      // history("/EchallanHome");
+    setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
+      logEvent(analytics, 'notification_received');
+
+      history("/EchallanHome");
+      
+    //   let myInterval = setInterval(() => {
+
+        
+    // }, 2150)
+    // return ()=> {
+    //     clearInterval(myInterval);
+    //   };
+
 
   });
 

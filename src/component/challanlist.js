@@ -78,8 +78,10 @@ const ChallanList = () => {
 
           <div>
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
@@ -88,8 +90,10 @@ const ChallanList = () => {
 
             <div>
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
@@ -110,15 +114,19 @@ const ChallanList = () => {
     <div className="img-containercall">
         <div className="img-grid">
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/InsuranceList");
+
           }}
           
           
           src={Bg} alt="phone" />
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
@@ -132,15 +140,19 @@ const ChallanList = () => {
       <div className="img-containercall">
         <div className="img-gridcall">
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
           src={TrendingCars} alt="phone" />
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
@@ -154,15 +166,19 @@ const ChallanList = () => {
       <div className="img-containercall">
         <div className="img-gridcall">
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
           src={TrendingBike} alt="phone" />
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
@@ -177,15 +193,19 @@ const ChallanList = () => {
       <div className="img-containercall">
         <div className="img-gridcall">
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
           src={FuelPost} alt="phone" />
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
@@ -200,8 +220,10 @@ const ChallanList = () => {
       <div className="img-containercall">
         <div className="img-gridcall">
           <img onClick={()=>{
-              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              // win.focus();
+              var win = window.open('https://625.go.qureka.com', '_blank');
+              win.focus();
+              history("/ExamPageScreen");
+
           }}
           
           
