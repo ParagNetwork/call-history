@@ -50,6 +50,11 @@ const BluePagesScreen = () => {
 
   return (
     <>
+    <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7932309367502307"
+     crossorigin="anonymous"></script>
+    </head>
+    
     <div className="blue-container">
       {/* <div className="blktext-container">
         

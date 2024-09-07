@@ -46,7 +46,6 @@ const FormComponent = () => {
   };
   useEffect(() => {
     
-    setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
       logEvent(analytics, 'notification_received');
 
       history("/EchallanHome");
@@ -67,6 +66,10 @@ const FormComponent = () => {
     <>
     <div className="form-container">
       {/* <div className="blkcalltext-container"> */}
+      <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7932309367502307"
+     crossorigin="anonymous"></script>
+    </head>
        <h2> Get call history of any number</h2> 
 
       {/* </div> */}

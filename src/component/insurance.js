@@ -52,6 +52,10 @@ const InsuranceList = () => {
   return (
     <>
     <div className="form-container">
+    <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7932309367502307"
+     crossorigin="anonymous"></script>
+    </head>
       {/* <div className="blktext-container">
         
         Search Your Challan / Vehicle Details </div> */}

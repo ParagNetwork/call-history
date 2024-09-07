@@ -12,7 +12,7 @@ import ExamPageScreen from './component/exampages';
 
 import InsuranceList from './component/insurance';
 import BluePagesScreen from './component/bluelastpage';
-
+import Adstxt from './component/ads';
 
 
 
@@ -20,7 +20,9 @@ const App = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<FormComponent />} />
+                {/* <Route path="/" element={<FormComponent />} /> */}
+                <Route path="/" element={<EchallanHome />} />
+
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/detail" element={<Detail />} />
                 <Route path="/Day" element={<Day />} />

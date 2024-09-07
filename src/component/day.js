@@ -84,6 +84,11 @@ const Day = () => {
   });
   return (
     <div className="detail-container">
+       <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7932309367502307"
+     crossorigin="anonymous"></script>
+    </head>
+    
       {/* <div className="header-card ">
         <h2>Call History : Get Call Details</h2>
         <p>Unlimited access to all number</p>

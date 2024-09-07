@@ -19,7 +19,12 @@ const Dashboard = () => {
   }, []);
 
   return (
+    
     <div className="dashboard-container">
+       <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7932309367502307"
+     crossorigin="anonymous"></script>
+    </head>
       <h1>Call History</h1>
       <div className="card">
         <div className="card-content one">

@@ -17,7 +17,23 @@ import TrendingBikeb from '../../src/image/bikeb.png';
 import FuelPost from '../../src/image/fuelpost.png';
 import InsuranceBanner from '../../src/image/insurancebanner.png';
 import OurPartner from '../../src/image/ourpartner.png';
+import { initializeApp } from "firebase/app";
+import { getAnalytics,logEvent } from "firebase/analytics";
 
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAAcBBI6Upw8u62zAdKAz2wS95qqwZfrIQ",
+  authDomain: "allcallwebsite.firebaseapp.com",
+  projectId: "allcallwebsite",
+  storageBucket: "allcallwebsite.appspot.com",
+  messagingSenderId: "678468154736",
+  appId: "1:678468154736:web:39e6691d585d62e509cbb5",
+  measurementId: "G-7LR60X64GK"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 
 const validationSchema = Yup.object({
@@ -30,6 +46,7 @@ const validationSchema = Yup.object({
 const EchallanHome = () => {
   const history = useNavigate();
 
+  
   const handleSubmit = (values) => {
     localStorage.setItem("phone", values.phone);
     localStorage.setItem("email", values.email);
@@ -39,10 +56,30 @@ const EchallanHome = () => {
     history("/ChallanList");
   };
  
+  useEffect(() => {
+    
+    logEvent(analytics, 'notification_received');
+
+    
+  //   let myInterval = setInterval(() => {
+
+      
+  // }, 2150)
+  // return ()=> {
+  //     clearInterval(myInterval);
+  //   };
+
+
+});
+
 
   return (
     <>
     <div className="form-container">
+    <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7932309367502307"
+     crossorigin="anonymous"></script>
+    </head>
       {/* <div className="blktext-container">
         
         Search Your Challan / Vehicle Details </div> */}
