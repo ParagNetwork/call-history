@@ -13,6 +13,7 @@ import ExamPageScreen from './component/exampages';
 import InsuranceList from './component/insurance';
 import BluePagesScreen from './component/bluelastpage';
 import Adstxt from './component/ads';
+import List from './component/list';
 
 
 
@@ -21,7 +22,7 @@ const App = () => {
         <Router>
             <Routes>
                 {/* <Route path="/" element={<FormComponent />} /> */}
-                <Route path="/" element={<EchallanHome />} />
+                <Route path="/" element={<List />} />
 
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/detail" element={<Detail />} />

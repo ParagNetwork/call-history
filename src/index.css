@@ -375,6 +375,13 @@ a{
 }
 
 @media (max-width:768px){
+  .list-grid{
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+  .list-grid-item img{
+    width: 100% !important;
+    height: auto !important;
+  }
   .img-grid{
     grid-template-columns: repeat(1,1fr);
     padding: 20px;
@@ -389,4 +396,29 @@ a{
   .img-containercall{
     margin: 20px auto;
   }
+}
+
+.list-grid{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  
+  gap: 20px;
+ 
+}
+
+.list-grid-item img{
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+.list-grid-item{
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.list-grid-item:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
 }
