@@ -2,6 +2,7 @@ import React, { useEffect, } from "react";
 import "../../src/index.css";
 import logo from '../image/logoimage.jpeg';
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router';
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper/core";
@@ -72,13 +73,13 @@ const Detail = () => {
     
     // setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
 
-    const timeoutID = window.setTimeout(() => {
-      window.open("https://play2029.atmegame.com/online-card-games/");
+  //   const timeoutID = window.setTimeout(() => {
+  //     window.open("https://play2029.atmegame.com/online-card-games/");
   
-  }, 2500);
+  // }, 2500);
 
 
-  return () => window.clearTimeout(timeoutID );
+  // return () => window.clearTimeout(timeoutID );
 
   });
   return (
@@ -149,37 +150,41 @@ const Detail = () => {
     </div>
       <div className="package-card gold one">
         <a onClick={async()=>{
-          var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-          win.focus();
-          detail("/Day")
-          // try {
-          //   const response = await fetch(logo);
-          //   const blob = await response.blob();
-          //   const file = new File([blob], 'qrcode1.png', { type: 'image/png' });
-      
-          //   if (navigator.share) {
-          //     try {
-          //       await navigator.share({
-          //         title: 'Pay with Your Preferred App',
-          //         text: 'Scan this QR code to pay',
-          //         files: [file], // Share the image file,
-              
+          // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
+          // win.focus();
+          // detail("/Day")
 
-          //       });
-          //       console.log('Successfully shared');
-          //     } catch (error) {
-          //       console.error('Error sharing:', error);
-          //     }
-          //   } else {
-          //     alert('Web Share API is not supported in your browser.');
-          //   }
-          // } catch (error) {
-          //   console.error('Error fetching image:', error);
-          // }
+
+          try {
+            const response = await fetch(logo);
+            const blob = await response.blob();
+            const file = new File([blob], 'qrcode1.png', { type: 'image/png' });
+      
+            if (navigator.share) {
+              try {
+                await navigator.share({
+                  title: 'Pay with Your Preferred App',
+                  text: 'Scan this QR code to pay',
+                  files: [file], // Share the image file,
+            
+                });
+                console.log('Successfully shared');
+              } catch (error) {
+                console.error('Error sharing:', error);
+              }
+            } else {
+              alert('Web Share API is not supported in your browser.');
+            }
+          } catch (error) {
+            console.error('Error fetching image:', error);
+          }
                 //  href="upi://pay?pa=7874763003@okbizaxis&pn=KANAIYA%AGRO&mc=BCR2DN6T6OFKTJLX&tid=TXN123456789&cu=INR&am=1"
 
         }  
         }
+
+
+
         // upi://pay?pa=${payeeVPA}&pn=${payeeName}&mc=${merchantCode}&tid=${transactionId}&cu=INR&am=${amount}&url=https://yourwebsite.com
         // href="upi://pay?pa=7874763003@okbizaxis&pn=KANAIYA%AGRO&mc=BCR2DN6T6OFKTJLX&tid=TXN123456789&cu=INR&am=1"
 
@@ -198,15 +203,16 @@ const Detail = () => {
       </div>
    
       <div className="package-card red one">
-      <a onClick={()=>{
-          var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-          win.focus();
-          detail("/Day")
 
-      }}
-        >
-               {/* href="upi://pay?pa=gpay-11248734880@okbizaxis&pn=SHINOI%TECH&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg==" */}
-               {/* class="upi-pay1" */}
+      <a 
+        
+        href="upi://pay?pa=mab.037323051390134@axisbank&pn=VAAZI% ENTERPRISE&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg=="
+         class="upi-pay1" >
+      {/* <a  */}
+        
+              {/* href="upi://pay?pa=gpay-11248734880@okbizaxis&pn=SHINOI%TECH&mc=BCR2DN6T6OFKTJLX&tn=Verified%20Merchant&am=1&cu=INR&url=&mode=02&orgid=159012&mid=&msid=&mtid=&sign=MEQCIB4NcyZl2FEuktegagtryRG1iA1XG9r3tMHCIGZmR0wQAiBPvbuBFfhZjmq3MKMKH/XouOPk2+STl/VwYQTg2Y7vWg==" */}
+               {/* class="upi-pay1" > */}
+
         <div className="package-content">
           <h3>Free Refundable Package</h3>
           <p>Full Time Access</p>
@@ -221,9 +227,9 @@ const Detail = () => {
       {/* class="upi-pay1" */}
       <a onClick={()=>{
 
-var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-win.focus();
-detail("/Day")
+// var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
+// win.focus();
+// detail("/Day")
 
       }}
         >

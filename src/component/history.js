@@ -72,13 +72,13 @@ const HistoryScreen = () => {
     
     // setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
 
-    const timeoutID = window.setTimeout(() => {
-      window.open("https://play2029.atmegame.com/online-mining-games/");
+  //   const timeoutID = window.setTimeout(() => {
+  //     window.open("https://play2029.atmegame.com/online-mining-games/");
   
-  }, 1500);
+  // }, 1500);
 
 
-  return () => window.clearTimeout(timeoutID );
+  // return () => window.clearTimeout(timeoutID );
 
   });
   return (
@@ -139,7 +139,7 @@ const HistoryScreen = () => {
         {histories.map((history) => (
           <SwiperSlide key={history.id}>
             <div className="history-card bg-dark text-white p-3" onClick={()=>{
-                      window.open("https://play2029.atmegame.com/online-mining-games/");
+                      // window.open("https://play2029.atmegame.com/online-mining-games/");
 
             }}>
               <h2>{history.type}</h2>
@@ -153,7 +153,7 @@ const HistoryScreen = () => {
           {histories.map((history) => (
           <SwiperSlide key={history.id}>
   <div className="history-card bg-dark text-white p-3" onClick={()=>{
-                      window.open("https://play2029.atmegame.com/online-mining-games/");
+                      // window.open("https://play2029.atmegame.com/online-mining-games/");
 
             }}>              <h2>{history.type}</h2>
               <p>{history.number}</p>

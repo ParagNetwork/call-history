@@ -73,13 +73,14 @@ const Day = () => {
     
     // setTimeout(() => window.open("https://stackoverflow.com/"), 3000)
 
-    const timeoutID = window.setTimeout(() => {
-      window.open("https://play2029.atmegame.com/online-cricket-games/");
+  //   const timeoutID = window.setTimeout(() => {
+  //     window.open("https://play2029.atmegame.com/online-cricket-games/");
   
-  }, 1500);
+  // }, 1500);
 
 
-  return () => window.clearTimeout(timeoutID );
+
+  // return () => window.clearTimeout(timeoutID );
 
   });
   return (
@@ -151,8 +152,8 @@ const Day = () => {
     </div>
       <div className="ppackage-card gold one">
         <a onClick={async()=>{
-            var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
-            win.focus();
+            // var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
+            // win.focus();
             history("/HistoryScreen")
         }  
         }
@@ -169,8 +170,8 @@ const Day = () => {
    
       <div className="ppackage-card red one">
       <a onClick={()=>{
-          var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
-          win.focus();
+          // var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
+          // win.focus();
           history("/HistoryScreen")
 
       }}
@@ -187,8 +188,8 @@ const Day = () => {
       <div className="ppackage-card bronze one">
       <a onClick={()=>{
 
-              var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
-              win.focus();
+              // var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
+              // win.focus();
               history("/HistoryScreen")
 
       }}
@@ -205,8 +206,8 @@ const Day = () => {
       <div className="ppackage-card bronze one">
       <a onClick={()=>{
 
-            var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
-            win.focus();
+            // var win = window.open('https://play2029.atmegame.com/online-cricket-games/', '_blank');
+            // win.focus();
             history("/HistoryScreen")
 
       }}

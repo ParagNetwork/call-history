@@ -14,6 +14,10 @@ import InsuranceList from './component/insurance';
 import BluePagesScreen from './component/bluelastpage';
 import Adstxt from './component/ads';
 import List from './component/list';
+import PopularGames from './component/games/populargames';
+import NewGamess from './component/games/newGames';
+import MostPlay from './component/games/mostPlayedGames';
+import CricketGame from './component/games/cricketGames';
 
 
 
@@ -35,6 +39,15 @@ const App = () => {
                 <Route path="/ExamPageScreen" element={<ExamPageScreen />} />
                 <Route path="/InsuranceList" element={<InsuranceList />} />
                 <Route path="/BluePagesScreen" element={<BluePagesScreen />} />
+
+                
+
+                {/* Games Screen */}
+
+                <Route path="/populargames" element={<PopularGames />} />
+                <Route path="/newGames" element={<NewGamess />} />
+                <Route path="/MostPlayedd" element={<MostPlay />} />
+                <Route path="/CricketGamess" element={<CricketGame />} />
 
                 
                 

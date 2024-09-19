@@ -38,8 +38,8 @@ const FormComponent = () => {
     localStorage.setItem("phone", values.phone);
     localStorage.setItem("email", values.email);
 
-    var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-    win.focus();
+    // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
+    // win.focus();
 
     
     history("/dashboard");
@@ -48,7 +48,7 @@ const FormComponent = () => {
     
       logEvent(analytics, 'notification_received');
 
-      history("/EchallanHome");
+      // history("/EchallanHome");
       
     //   let myInterval = setInterval(() => {
 
@@ -106,15 +106,15 @@ const FormComponent = () => {
     <div className="img-container">
         <div className="img-grid">
           <img onClick={()=>{
-              var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              win.focus();
+              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
+              // win.focus();
           }}
           
           
           src={Bg} alt="phone" />
           <img onClick={()=>{
-              var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
-              win.focus();
+              // var win = window.open('https://play2029.atmegame.com/online-card-games/', '_blank');
+              // win.focus();
           }}
           
           
