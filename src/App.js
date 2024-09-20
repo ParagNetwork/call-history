@@ -18,6 +18,7 @@ import PopularGames from './component/games/populargames';
 import NewGamess from './component/games/newGames';
 import MostPlay from './component/games/mostPlayedGames';
 import CricketGame from './component/games/cricketGames';
+import CasinoGame from './component/games/casinoGames';
 
 
 
@@ -48,9 +49,10 @@ const App = () => {
                 <Route path="/newGames" element={<NewGamess />} />
                 <Route path="/MostPlayedd" element={<MostPlay />} />
                 <Route path="/CricketGamess" element={<CricketGame />} />
+                <Route path="/CasinoGamess" element={<CasinoGame />} />
 
                 
-                
+                CasinoGame
             </Routes>
         </Router>
     );

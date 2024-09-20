@@ -98,211 +98,223 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const CricketGamess = ({  }) => {
+const CasinoGamess = ({  }) => {
 
     const history = useNavigate();
 
 const  images = [
 
-    {
-      id: 10,
-      image: action2,
-    },
-    ,
-    {
-      id: 11,
-      image: newgamec,
-    },
+  
+    
 
-    {
-      id: 12,
-      image: mostPlayed3,
-    },
-    {
-      id: 13,
-      image: crick3,
-    }
+
       ,
-
       {
-        id: 83,
-        image: mostPlayed14,
+        id: 11,
+        image: newgamec,
       },
- 
-
-
+  
       {
-        id: 85,
-        image: mostPlayed16,
-      },
-
-      {
-        id: 74,
-        image: ffdiamond,
+        id: 12,
+        image: mostPlayed3,
       },
       {
-        id: 75,
+        id: 13,
+        image: crick3,
+      }
+        ,
+  
+        {
+          id: 83,
+          image: mostPlayed14,
+        },
+   
+  
+  
+        {
+          id: 85,
+          image: mostPlayed16,
+        },
+  
+        {
+          id: 74,
+          image: ffdiamond,
+        },
+        {
+          id: 75,
+          image: fortninate,
+        },
+        {
+          id: 76,
+          image: freefire,
+        },
+        {
+          id: 66,
+          image: items,
+        },
+        
+      {
+          id: 60,
+          image: action12,
+        },
+        {
+          id: 61,
+          image: casino13,
+        },
+        {
+          id: 62,
+          image: crick13,
+        },
+        {
+          id: 63,
+          image: mostPlayed13,
+        },
+        {
+          id: 64,
+          image: mostPlayed14,
+        },
+        
+      {
+        id: 78,
         image: fortninate,
       },
       {
-        id: 76,
-        image: freefire,
-      },
-      {
-        id: 66,
-        image: items,
-      },
-      
-    {
-        id: 60,
-        image: action12,
-      },
-      {
-        id: 61,
-        image: casino13,
-      },
-      {
-        id: 62,
-        image: crick13,
-      },
-      {
-        id: 63,
-        image: mostPlayed13,
-      },
-      {
-        id: 64,
-        image: mostPlayed14,
-      },
-      {
-        id: 65,
-        image: crick14,
-      },
-      ,
-
-      {
-        id: 81,
-        image: casino14,
-      },
-      {
-        id: 82,
-        image: crick14,
-      },
-    {
-      id: 9,
-      image: casino2,
-    },
-      {
-        id:17,
-        image: mostPlayed4,
-      },
-      {
-        id:18,
-        image: crick4,
-      },
-      {
-        id:19,
-        image: casino4,
-      },
-      {
-        id:20,
-        image: action4,
-      },
-      {
-        id: 21,
-        image: newgamee,
+        id: 79,
+        image: xbotgame,
       },
       ,
       {
-        id:22,
-        image: mostPlayed5,
+        id: 80,
+        image: assettocorsa,
       },
 
 
+    
+
       {
-        id: 6,
+        id: 10,
         image: action2,
       },
-
-      
-      {
-        id: 83,
-        image: mostPlayed14,
-      },
-     
-      {
-        id: 56,
-        image: newgamek,
-      },
-      {
-        id: 57,
-        image: mostPlayed12,
-      },
-      {
-        id: 58,
-        image: crick12,
-      },
-      {
-        id: 59,
-        image: casino12,
-      },
+        {
+          id: 65,
+          image: crick14,
+        },
+        ,
   
-
+        {
+          id: 81,
+          image: casino14,
+        },
+        {
+          id: 82,
+          image: crick14,
+        },
       {
-        id: 53,
-        image:casino11,
+        id: 9,
+        image: casino2,
       },
+        {
+          id:17,
+          image: mostPlayed4,
+        },
+        {
+          id:18,
+          image: crick4,
+        },
+        {
+          id:19,
+          image: casino4,
+        },
+    
+      {
+        id: 3,
+        image: crick1,
+      },
+      {
+        id: 4,
+        image: mostPlayed1,
+      },
+    
       {
         id: 54,
         image: crick11,
       },
+
+      {
+        id: 52,
+        image: action11,
+      },
+      {
+        id: 50,
+        image: casino10,
+      },
+      {
+        id: 71,
+        image: spidersolatier,
+      },
+      {
+        id: 72,
+        image: freecellsolatier,
+      },
+      {
+        id: 73,
+        image: freefire,
+      },
+     
+      
+      {
+        id: 77,
+        image: ffdiamond,
+      },
+
+      {
+        id: 41,
+        image: newgamei,
+      },
+      {
+        id: 42,
+        image: mostPlayed9,
+      },
+      {
+        id: 43,
+        image: crick9,
+      },
       ,
       {
-        id: 55,
-        image: mostPlayed11,
+        id: 44,
+        image: casino9,
       },
 
 
       {
-        id: 56,
-        image: newgamek,
-      },
-
-
-      {
-        id: 84,
-        image: mostPlayed15,
+        id: 45,
+        image: action9,
       },
 
       {
-        id: 85,
-        image: mostPlayed16,
-      },
-
-    
-      {
-        id: 84,
-        image: mostPlayed15,
-      },
-
-    
-      {
-        id: 24,
-        image: casino5,
+        id: 46,
+        image: action10,
       },
       {
-        id: 25,
-        image: action5,
-      },
-    
-     
-
-      {
-        id: 7,
-        image: mostPlayed2,
+        id: 47,
+        image: newgamej,
       },
       {
-        id: 8,
-        image: crick2,
+        id: 5,
+        image: newgamea,
+      },
+        
+      {
+        id: 51,
+        image: action10,
+      },
+      {
+        id: 52,
+        image: action11,
+      },
+      {
+        id: 53,
+        image:casino11,
       },
       {
         id: 14,
@@ -316,20 +328,7 @@ const  images = [
         id: 16,
         image: newgamed,
       },
-      {
-        id: 81,
-        image: casino14,
-      },
-      {
-        id: 82,
-        image: crick14,
-      },
-      ,
-      {
-        id: 23,
-        image: crick5,
-      },
-
+    
       
 
       
@@ -350,6 +349,39 @@ const  images = [
         image: casino8,
       },
       {
+        id: 34,
+        image: casino7,
+      },
+      {
+        id: 35,
+        image: action7,
+      },
+
+
+
+
+
+
+
+      {
+        id: 66,
+        image: items,
+      },
+
+
+
+
+
+
+      {
+        id: 67,
+        image: action1,
+      },
+      {
+        id: 68,
+        image: trafficRider,
+      },
+      {
         id:40,
         image: newgameh,
       },
@@ -359,6 +391,19 @@ const  images = [
         image: crick7,
       },
 
+      {
+        id: 81,
+        image: casino14,
+      },
+      {
+        id: 82,
+        image: crick14,
+      },
+      ,
+      {
+        id: 23,
+        image: crick5,
+      },
 
       {
         id: 34,
@@ -407,39 +452,7 @@ const  images = [
       },
 
 
-      {
-        id: 34,
-        image: casino7,
-      },
-      {
-        id: 35,
-        image: action7,
-      },
-
-
-
-
-
-
-
-      {
-        id: 66,
-        image: items,
-      },
-
-
-
-
-
-
-      {
-        id: 67,
-        image: action1,
-      },
-      {
-        id: 68,
-        image: trafficRider,
-      },
+    
       {
         id: 69,
         image: solatire,
@@ -462,74 +475,6 @@ const  images = [
         image: casino1,
       },
       {
-        id: 3,
-        image: crick1,
-      },
-      {
-        id: 4,
-        image: mostPlayed1,
-      },
-      {
-        id: 5,
-        image: newgamea,
-      },
-        
-      {
-        id: 51,
-        image: action10,
-      },
-      {
-        id: 52,
-        image: action11,
-      },
-      {
-        id: 53,
-        image:casino11,
-      },
-      {
-        id: 54,
-        image: crick11,
-      },
-
-      {
-        id: 52,
-        image: action11,
-      },
-     
-
-      {
-        id: 41,
-        image: newgamei,
-      },
-      {
-        id: 42,
-        image: mostPlayed9,
-      },
-      {
-        id: 43,
-        image: crick9,
-      },
-      ,
-      {
-        id: 44,
-        image: casino9,
-      },
-
-
-      {
-        id: 45,
-        image: action9,
-      },
-
-      {
-        id: 46,
-        image: action10,
-      },
-      {
-        id: 47,
-        image: newgamej,
-      },
-      {
         id: 48,
         image: mostPlayed10,
       },
@@ -547,51 +492,111 @@ const  images = [
       },
    
 
-      {
-        id: 50,
-        image: casino10,
-      },
-      {
-        id: 71,
-        image: spidersolatier,
-      },
-      {
-        id: 72,
-        image: freecellsolatier,
-      },
-      {
-        id: 73,
-        image: freefire,
-      },
-     
-      
-      {
-        id: 77,
-        image: ffdiamond,
-      },
-
-
-      {
-        id: 78,
-        image: fortninate,
-      },
-      {
-        id: 79,
-        image: xbotgame,
-      },
-      ,
-      {
-        id: 80,
-        image: assettocorsa,
-      },
-
-
+        {
+          id:20,
+          image: action4,
+        },
+        {
+          id: 21,
+          image: newgamee,
+        },
+        ,
+        {
+          id:22,
+          image: mostPlayed5,
+        },
+        {
+            id: 25,
+            image: action5,
+          },
+        
+         
     
-
-
-
-
-
+          {
+            id: 7,
+            image: mostPlayed2,
+          },
+          {
+            id: 8,
+            image: crick2,
+          },
+  
+  
+  
+  
+  
+        {
+          id: 6,
+          image: action2,
+        },
+  
+        
+        {
+          id: 83,
+          image: mostPlayed14,
+        },
+       
+        {
+          id: 56,
+          image: newgamek,
+        },
+        {
+          id: 57,
+          image: mostPlayed12,
+        },
+       
+        {
+          id: 54,
+          image: crick11,
+        },
+        ,
+        {
+          id: 55,
+          image: mostPlayed11,
+        },
+  
+  
+        {
+          id: 56,
+          image: newgamek,
+        },
+  
+  
+        {
+          id: 84,
+          image: mostPlayed15,
+        },
+  
+        {
+          id: 85,
+          image: mostPlayed16,
+        },
+  
+      
+        {
+          id: 84,
+          image: mostPlayed15,
+        },
+  
+        {
+            id: 58,
+            image: crick12,
+          },
+          {
+            id: 59,
+            image: casino12,
+          },
+      
+    
+          {
+            id: 53,
+            image:casino11,
+          },
+        {
+          id: 24,
+          image: casino5,
+        },
+       
 
 
 
@@ -626,7 +631,7 @@ const  images = [
        {images.map((item) => (
         <div className="list-grid-item">
             <div onClick={()=>{
-                  history("/CasinoGamess");
+                 history("/MostPlayedd");
 
             }}>
                 <img src={item.image} alt="item" className="list-item-image" />
@@ -643,4 +648,4 @@ const  images = [
   );
 };
 
-export default CricketGamess;
+export default CasinoGamess;
